@@ -14,9 +14,8 @@ h2 {
   font-size: 30px;
 }
 
-h1,
-h2 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.established {
+  font-style: italic;
 }
 
 h1,
@@ -25,26 +24,14 @@ p {
   text-align: center;
 }
 
-.tahun {
-  font-style: italic;
-}
-
-hr {
-  height: 2px;
-  border-color: brown;
-  background-color: brown;
-}
-
 .menu {
   width: 80%;
   background-color: burlywood;
-  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
 }
-
 img {
   display: block;
   margin-left: auto;
@@ -52,27 +39,38 @@ img {
   margin-top: -25px;
 }
 
-.item {
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
   display: flex;
-  margin-top: -10px;
-  margin-bottom: -25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 18px;
 }
 
-.flavor {
+.flavor,
+.dessert {
   text-align: left;
-  width: 50%;
-  flex-grow: 1; /* kunci yang membedakan dari freecodecamp */
+  width: 75%;
+  flex-wrap: 1;
 }
 
 .price {
   text-align: right;
   width: 25%;
-  margin-left: 20px;
-}
-
-.bottom-line {
-  margin-top: 30px;
 }
 
 /* FOOTER */
@@ -87,7 +85,6 @@ footer {
 
 a {
   color: black;
-  text-decoration: none;
 }
 
 a:visited {
