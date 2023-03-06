@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran</h1>
+    <p>Silahkan isi sesuai data yang di minta</p>
+
+    <form action="https://ameer.com" method="post">
+      <fieldset>
+        <legend>Data Pribadi</legend>
+        <label for="nama"
+          >Nama Lengkap:
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            required
+            placeholder="Masukkan Nama Lengkap"
+        /></label>
+        <label for="age"
+          >Umur:
+          <input
+            type="number"
+            max="60"
+            min="11"
+            id="age"
+            name="age"
+            placeholder="Umur"
+            required
+        /></label>
+        <label for="email"
+          >Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Masukkan Email"
+        /></label>
+        <label for="password"
+          >Password:
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Masukkan Password"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Akun</legend>
+        <label for="akun-p"
+          ><input type="radio" id="akun-p" name="akun" class="inline" />Akun
+          Pribadi</label
+        >
+        <label for="akun-b"
+          ><input type="radio" id="akun-b" name="akun" class="inline" />Akun
+          Bisnin</label
+        >
+        <label for=""
+          ><input type="checkbox" id="" name="" required class="inline" />Saya
+          terima <a href="https://ameer.com">syarat dan ketentuan</a></label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Data Tambahan</legend>
+        <label for="sumber"
+          >Sumber Informasi
+          <select name="sumber" id="sumber">
+            <option value="Instagram">Instagram</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twiter">Twiter</option>
+          </select>
+        </label>
+        <label for="foto"
+          >Upload Foto <input type="file" id="foto" name="foto"
+        /></label>
+        <label for="bio"
+          >Biografi Pendaftar
+          <textarea
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="5"
+            placeholder="Saya suka coding"
+          ></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
