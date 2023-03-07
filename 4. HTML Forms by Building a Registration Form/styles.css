@@ -32,6 +32,10 @@ fieldset:last-of-type {
   border-bottom: none;
 }
 
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
 input,
 textarea,
 select {
@@ -45,11 +49,6 @@ textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
   color: #ece5e5;
-}
-
-label {
-  display: block;
-  margin: 0.5rem 0;
 }
 
 .inline {
