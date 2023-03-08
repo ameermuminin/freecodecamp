@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <h1 id="title">Formulir Pendaftaran</h1>
+  <p id="description">Isilah formulir berikut ini</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <legend>Identitas</legend>
+    <!-- nama -->
+    <label for="name" id="name-label">Nama Lengkap:
+      <input type="text" id="name" name="name" required placeholder="Masukkan Nama Lengkap">
+    </label>
+
+    <!-- email -->
+    <label for="email" id="email-label">Email:
+      <input type="email" id="email" name="email" required placeholder="Masukkan Email">
+    </label>
+
+    <!-- umur -->
+    <label for="number" id="number-label">Umur:
+      <input type="number" id="number" name="number" required min="10" max="50" placeholder="Masukkan Umur">
+    
+    </fieldset>
+
+    <fieldset>
+      <legend>Kepribadian</legend>
+      <!-- tingkat -->
+    <label for="dropdown">Tingkat Pendidikan</label>
+    <select id="dropdown" name="tingkat">
+      <option value="sd">SD</option>
+      <option value="smp">SMP</option>
+      <option value="sma">SMA</option>
+    </select>
+
+    <!-- gender -->
+    <label for="gen_lk">
+      <input type="radio" id="gen_lk" name="gender" value="lk"> Laki-laki
+    </label>
+
+    <label for="gen_pr">
+      <input type="radio" id="gen_pr" name="gender" value="pr"> Perempuan
+    </label>
+
+    <!-- hobby -->
+    <label for="hobby">
+      <input type="checkbox" id="hobby" name="hobby" value="membaca">Membaca
+      <input type="checkbox" id="hobby" name="hobby" value="olahraga">Olahraga
+      <input type="checkbox" id="hobby" name="hobby" value="traveling">Traveling
+    </label>
+
+    <!-- biografi -->
+    <label for="bio"> Tiliskan Biografi Anda
+      <textarea id="bio" name="bio"></textarea>
+    </label>
+    </fieldset>
+
+    <input type="submit" id="submit" value="Submit">
+
+
+  </form>
+</body>
+</html>
